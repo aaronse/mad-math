@@ -1,0 +1,190 @@
+# PlatformIO
+.pio
+.pioenvs
+.piolibdeps
+.clang_complete
+.gcc-flags.json
+
+# VS Code: ignore every file/folder directly under .vscode by default so local/editor-generated junk does not get committed.
+.vscode/*
+
+# VS Code: re-include the .vscode directory itself so Git can consider carefully whitelisted shared files below.
+!.vscode/
+
+# VS Code: include recommended extensions only; this is portable repo guidance for contributors and dev agents.
+!.vscode/extensions.json
+
+# VS Code: include shared workspace settings only if this file is manually curated and contains portable repo-level settings.
+!.vscode/settings.json
+
+# VS Code / PlatformIO: explicitly ignore generated debug configs because they can contain absolute clone paths and user-local toolchain paths.
+.vscode/launch.json
+
+# VS Code / PlatformIO C/C++: explicitly ignore generated IntelliSense config because PlatformIO generates it with absolute paths.
+.vscode/c_cpp_properties.json
+
+# VS Code: keep shared task definitions ignored until/unless we intentionally create a portable tasks.json using relative paths.
+.vscode/tasks.json
+
+# VS Code local overrides: keep personal settings files ignored if a developer/agent creates them.
+.vscode/*.local.json
+
+# VS Code local overrides: keep any other local-only .vscode config variants ignored.
+.vscode/*.local.*
+
+# VS Code C/C++: ignore IntelliSense precompiled-header cache.
+.vscode/ipch/
+
+# VS Code C/C++: ignore generated symbol/browse database files.
+.vscode/browse.VC.db*
+
+# VS Code/extensions: ignore local extension caches.
+.vscode/.cache/
+
+# VS Code/extensions: ignore local edit/history artifacts created by history extensions or tooling.
+.vscode/.history/
+
+# VS Code/testing: ignore generated test result artifacts if any tool writes them under .vscode.
+.vscode/test-results/
+
+# VS Code/testing: ignore generated coverage artifacts if any tool writes them under .vscode.
+.vscode/coverage/
+
+# Visual Studio
+.vs/
+
+# Build artifacts
+*.bin
+*.elf
+*.hex
+*.map
+firmware.bin
+bootloader.bin
+partitions.bin
+
+# Compiled Object files
+*.o
+*.obj
+*.lo
+*.slo
+*.ko
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Python
+*.py[cod]
+*$py.class
+__pycache__/
+*.so
+.Python
+env/
+
+# Font generation cache
+scripts/fontawesome-cache/
+
+# Documentation images
+/docs/images/bmp/
+venv/
+.venv
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.stackdump
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+*.temp
+*.log
+*.bak
+*.cache
+tmpclaude-*
+
+# IDE
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Build directories
+build/
+dist/
+out/
+/apps/tools/video/out/
+*.ppm
+
+# Documentation
+docs/_build/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# Credentials (never commit these!)
+secrets.h
+credentials.h
+wifi_config.h
+
+# Test coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+playwright-report/
+test-results/
+
+# Misc
+*.orig
+links.txt
+
+# Web installer build artifacts (local builds and previews)
+web/firmware/basic/
+web/firmware/advance-v1.3/
+web/firmware/advance-v1.2/
+web/firmware/preview/
+web/firmware/*/
+web/versions.json
+
+webui/
+node_modules/
+
+bin/
+obj/
+
+# Ignore private Agent files, which may contain sensitive information and are not meant to be shared or committed to version control.
+#AGENT*

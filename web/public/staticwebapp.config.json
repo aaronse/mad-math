@@ -1,0 +1,14 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/audio/*", "/assets/*", "/*.{css,js,png,jpg,gif,svg,ico,webp,mp3,ogg,wasm}"]
+  },
+  "mimeTypes": {
+    ".mp3": "audio/mpeg",
+    ".ogg": "audio/ogg"
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  }
+}
